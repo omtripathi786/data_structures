@@ -1,0 +1,28 @@
+Question 1:-
+
+Given two strings s and t, to determine whether some anagram of t is a substring of s, we loop through the string which
+we converted to sorted list then compare the sorted t with same length combination.
+ time complexity :- len(t) log len(t) + (len(t) log len(t) * (len(s) - len(t)))
+
+Question 2:-
+in order to find the longest palindrome number i have loop through the string and exclude last element after that.
+in worst case scenario where there is no palindrome number we have to loop through the whole string.
+ time complexity :- O(len(input_string)
+
+Question 3:-
+ this problem i have resolve using Kruskal's algorithm. The basic idea is to sort the edges by
+ its weight and starts include the edge without causing a cycle in the graph. One way to make sure there are no cycle
+  in the graph is by keep track of each vertice in a list of sets. If the new edge will connect two vertices within
+  the same set, we will not include it. Else, we include the set and take union of the sets.
+  time complexity :- O(E*log(V))
+
+Question 4:-
+to solve this we traverse the tree in bottom up approach if both node are found return to its parent.
+and parent will check if it will able to get the nodes from both of its child if yes then parrent is LCA
+time complexity :- O(H) where h i height of the tree
+
+question 5:--
+for this problem simply we have to traverse in the link list and have to return l - m element.
+where l is length of elelment and m is the mth element from the last.
+time complexity :- O(n * n)
+
